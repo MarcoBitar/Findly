@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findly Treasure</title>
+    <link rel="stylesheet" href="/css/treasurePage.css">
+    <link href="https://fonts.cdnfonts.com/css/just-me-again-down-here-2" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('partials/audio') %>
+    <%- include('partials/header') %>
+        <div class="content">
+            <h2>Treasure: <%= treasure ? treasure.treasure_name : 'No Treasure Available' %>
+            </h2>
+            <form id="answer-form" method="POST" action="<%= treasure ? `/Findly/treasures/${treasure.treasure_id}/submit-answer` : '#' %>">
+                        <input type="text" name="url" placeholder="Enter the url where you found the treasure">
+                        <button type="submit" class="answer-submit">Submit</button>
+            </form>
+            <% if (typeof message !=='undefined' ) { %>
+                <div style="color:#7B5B3A; font-size: 1.3rem; margin-left: 43%; margin-top: 1rem; margin-bottom: 1rem;" class="message">
+                    <%= message %>
+                </div>
+                <% } %>
+            <% if (typeof error !=='undefined' ) { %>
+                <div style="color:brown;  font-size: 1.3rem; margin-left: 43%; margin-top: 1rem; margin-bottom: 1rem;" class="error">
+                    <%= error %>
+                </div>
+            <% } %>
+            <a href="/Findly/treasures">Onward For Gold!</a>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findly Game</title>
+    <link rel="stylesheet" href="/css/gamePage.css">
+    <link href="https://fonts.cdnfonts.com/css/just-me-again-down-here-2" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/audio') %>
+    <%- include('partials/header') %>
+        <div class="content">
+            <h2>Question: <%= game ? game.game_description : 'No Question available' %></h2>
+            <form id="answer-form" method="POST" action="<%= game ? `/Findly/games/${game.game_id}/submit-answer` : '#' %>">
+                <input type="text" name="name" placeholder="Enter your answer">
+                <button type="submit" class="answer-submit">Submit</button>
+            </form>
+            <% if (typeof message !=='undefined' ) { %>
+                <div style="color:#7B5B3A; font-size: 1.3rem; margin-left: 43%; margin-top: 1rem; margin-bottom: 1rem;" class="message">
+                    <%= message %>
+                </div>
+            <% } %>
+            <% if (typeof error !=='undefined' ) { %>
+                <div style="color:brown;  font-size: 1.3rem; margin-left: 43%; margin-top: 1rem; margin-bottom: 1rem;" class="error">
+                    <%= error %>
+                </div>
+            <% } %>
+            <% if (showClueButton) { %>
+                <a href="/Findly/clues/<%= game.game_id %>" class="clue-button">Get Clue</a>
+            <% } %>
+            <a href="/Findly/games" class="back">Back to the Quest!</a>
+        </div>
+</body>
+</html>

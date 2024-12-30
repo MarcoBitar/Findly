@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/css/userProfilePage.css">
+  <link href="https://fonts.cdnfonts.com/css/just-me-again-down-here-2" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('partials/audio') %>
+  <%- include('partials/header') %>
+    <%- include('partials/menu') %>
+      <h2>User Profile:</h2>
+      <div class="profile-container">
+        <!-- Display User Information -->
+        <div class="user-info">
+          <div id="display-info">
+            <p><strong>Name:</strong> <span id="display-name"><%= user? user.username : '' %></span></p>
+            <p><strong>Email:</strong> <span id="display-email"><%= user? user.user_email : 'contact@findly.com' %></span></p>
+            <a href="/Findly/users/edit/<%= user.user_id %>" class="editButton">Edit</a>
+          </div>
+        </div>
+
+        <!-- User Stats -->
+        <div class="stats">
+          <div class="stat">
+            <h3>Score: </h3>
+            <p><%= user.user_points %></p>
+          </div>
+          <div class="treasures">
+            <h4>Treasures Captured: </h4>
+            <p><%= user.user_rewards %></p>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements">
+          <h5>Achievements: </h5>
+          <div id="achievement-cards" class="cards-container">
+            <% if (achievements.length > 0) { %>
+              <% achievements.forEach(achievement => { %>
+                  <div class="achievement-card">
+                      <h6><%= achievement.name %></h6>
+                      <p><%= achievement.descr %></p>
+                      <p>Points Required: <%= achievement.pointsr %></p>
+                  </div>
+              <% }) %>
+          <% } else { %>
+              <p>No achievements unlocked yet.</p>
+          <% } %>
+          </div>
+        </div>
+</body>
+
+</html>

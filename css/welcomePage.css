@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Just Me Again Down Here', cursive;
+    background-color: #f8f4e3;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: url('/css/images/Welcome Page background.png');
+    background-size: 100% 95%;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    color: #000000;
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+
+  header a.aboutus {
+    text-decoration: none;
+    color: #000000; 
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 7.5px 20px;
+    margin-left: 1100px;
+    margin-top: 30px;
+  }
+
+  header a.aboutus:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+
+  header a.contact {
+    text-decoration: none;
+    color: #000000; 
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 7.5px 20px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  header a.contact:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+   
+  header a.signup {
+    text-decoration: none;
+    color: #000000; 
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 7.5px 30px;
+    background-color: #1ABC9C;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  header a.signup:hover {
+    background-color: #f8b400;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  main .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 80px;
+  }
+  
+  main h2 {
+    font-size: 6rem;
+    margin-bottom: -10px;
+  }
+  
+  main h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  main a {
+    text-decoration: none;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: bolder;
+    background-color: #f8f4e3;
+    border: 0.3rem solid #7B5B3A;
+    padding: 5px 80px;
+    font-size: 2rem;
+    color: #7B5B3A;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 120px;
+  }
+  
+  main a:hover {
+    border: 0.3rem dotted #7B5B3A;
+  }
+  
+  main h4 {
+    font-size: 2.5rem;
+    margin-left: 600px;
+    margin-top: -200px;
+  }
+
+  footer { 
+    margin-top: 275px;
+    background-color: #7d6956;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.5rem;
+  } 
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px;
+  }
+  
+  .first-column, .second-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .first-column h5, .second-column h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+  
+  .first-column div, .second-column div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .first-column img, .second-column img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  footer a {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+  } 
+
+  footer a:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  
+  .first-column a.home-pic-container, .first-column a.about-pic-container, .second-column a.email-pic-container, .second-column a.instagram-pic-container, .second-column a.twitter-pic-container, .second-column a.facebook-container, .second-column a.youtube-pic-container {
+    width:10px;
+    height:10px;
+  }
+  
+  .third-column {
+    text-align: left;
+  } 
+  
+  .third-column h5 {
+    font-size: 2rem;
+  } 
+
+  .newsletter-input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 120%;
+    font-size: 1rem;
+    font-family: 'Just Me Again Down Here', cursive;
+  }
+  
+  .newsletter-submit {
+    padding: 0px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f8f4e3;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Just Me Again Down Here', cursive;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .newsletter-submit:hover {
+    background-color: #1ABC9C;
+    border: none;
+  }

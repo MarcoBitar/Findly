@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findly Login</title>
+    <link rel="stylesheet" href="/css/loginPage.css">
+    <link href="https://fonts.cdnfonts.com/css/just-me-again-down-here-2" rel="stylesheet">
+</head>
+
+<body>
+    <div class="logo">Findly</div>
+    <div class="container">
+        <div class="login-form">
+            <h2>Log In</h2>
+            <form id="loginForm" method="POST" action="/Findly/users/login">
+                <label for="username">Username</label> 
+                <input type="text" id="username" name="name" placeholder="Username">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="pass" placeholder="Password">
+                <button type="submit">Continue</button>
+            </form>
+            <% if (typeof error !== 'undefined') { %>
+                <div style="color:brown; font-size: 1.3rem; margin-left: 6.5%; margin-top: -0.3rem; position:absolute;">
+                    <%= error %>
+                </div>
+             <% } %>
+            <div class="or">Or</div>
+            <div class="sign-in">
+                <a href="/Findly/signup">Don't have an account? Sign Up</a>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="/Findly/privacy">Privacy</a>
+            <a href="/Findly/terms">Terms</a>
+        </div>
+    </div>
+    <audio id="background-music" autoplay loop>
+        <source src="/css/audio/there-be-pirates-endless-seas(background audio).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('background-music');
+            audio.muted = false;
+            audio.play();
+            audio.volume = 0.35;
+        };
+    </script>
+</body>
+</html>

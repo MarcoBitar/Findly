@@ -1,0 +1,109 @@
+body {
+    font-family: 'Just Me Again Down Here', cursive;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-image: url('/css/images/Sign up or log in background.png');
+    background-size: 100% 92%;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #000000;
+    margin-left: 60px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    padding: 10rem;
+    border-radius: 8px;
+    margin-top: -50px;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin-bottom: 1rem;
+    margin-left: 15px;
+    color: #f8b400;
+    font-size: 3rem;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #7B5B3A;
+    font-size: 1.8rem;
+}
+
+.login-form input {
+    font-family: 'Just Me Again DOwn Here', cursive;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    font-family: 'Just Me Down Again Here', cursive;
+    font-size: 1rem;
+    width: 106%;
+    padding: 0.3rem;
+    background-color: #1ABC9C;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #7B5B3A;
+    color:#ffffff
+}
+
+.or {
+    margin: 1rem 0;
+    margin-left: 15px;
+    color: #7B5B3A;
+    font-size: 1.3rem;
+}
+
+.sign-in {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.sign-in a {
+    font-size: 1.3rem;
+    color: #7B5B3A;
+    text-decoration: none;
+}
+
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 11rem;
+    margin-left: 87.5%;
+}
+
+.footer a {
+    font-size: 1.3rem;
+    color: #7B5B3A;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

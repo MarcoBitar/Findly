@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Just Me Again Down Here', cursive;
+    background-color: #f8f4e3;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f8f4e3;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+header nav {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+header nav a:hover {
+    background: #f8b400;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1ABC9C;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.about-us {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.about-us-text {
+    flex: 2;
+}
+
+footer {
+    background: #f8f4e3;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5rem;
+}

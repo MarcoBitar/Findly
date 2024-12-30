@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findly Clue</title>
+    <link rel="stylesheet" href="/css/cluePage.css"> 
+    <link href="https://fonts.cdnfonts.com/css/just-me-again-down-here-2" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Findly</div>
+    </header>
+    <main>
+        <section class="clue">
+            <h1>Clue: <%= clue ? clue.clue_text : 'No Clue available' %></h1>
+            <a href="/Findly/games" class="ok" >AY AY CAPTAIN</a>
+        </section>
+    </main>
+    <audio id="background-music" autoplay loop>
+        <source src="/css/audio/there-be-pirates-endless-seas(background audio).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('background-music');
+            audio.muted = false;
+            audio.play();
+            audio.volume = 0.35;
+        };
+    </script>
+</body>
+</html>

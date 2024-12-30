@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findly About us</title>
+    <link rel="stylesheet" href="/css/aboutusPage.css">
+    <link href="https://fonts.cdnfonts.com/css/just-me-again-down-here-2" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Findly</div>
+        <nav>
+            <a href="/Findly">Home</a>
+            <a href="/Findly/privacy">Privacy</a>
+            <a href="/Findly/terms">Terms</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <div class="about-us-content">
+                <div class="about-us-text">
+                    <p>Welcome to Findly! Where users participate in a daily scavenger hunt across the internet.Every day, users receive a collection of games, riddles and puzzles; and by solving each of these challenges they get a clue to the daily treasure hidden in a certain website</p>
+                    <h2>Our Mission</h2>
+                    <p>At Findly, our mission is to entertain users daily and improve their analytical skills and use their brains to link clues together and find the hidden articfact</p>
+                    <h2>Our Team</h2>
+                    <p>Our team is composed of game enthusiasts who like to challenge others and share worthy content. We are constantly working to improve our app and provide new features based on your feedback.</p>
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or feedback, feel free to reach out to us at <a href="mailto:contact@findly.com">contact@findly.com</a>. We would love to hear from you!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Findly. All rights reserved.</p>
+    </footer>
+    <audio id="background-music" autoplay loop>
+        <source src="/css/audio/there-be-pirates-endless-seas(background audio).mp3" type="audio/mp3">
+    </audio>
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById('background-music');
+            audio.muted = false;
+            audio.play();
+            audio.volume = 0.35;
+        };
+    </script>
+</body>
+</html>

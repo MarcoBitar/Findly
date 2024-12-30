@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Just Me Again Down Here', cursive;
+    background-image: url('/css/images/Menu Item background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu img {
+    width: 45px;
+    height: 45px;
+}
+
+.side-menu a.menu {
+    margin-top: 10px;
+}
+
+.side-menu a.profile {
+    margin-top: 50px;
+}
+
+.side-menu a.games {
+    margin-top: 40px;
+}
+
+.side-menu a.treasures {
+    margin-top: 55px;
+    margin-left: -25px;
+    width: 20px;
+    height: 20px;
+}
+
+.side-menu a.achievements {
+    margin-top: 75px;
+}
+
+.side-menu a.leaderboard {
+    margin-top: 45px;
+}
+
+header {
+    margin-left: 80px;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: 'Just Me Again Down Here', cursive;
+    margin-left: 47.5%;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 7%;
+}
+
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.podium-stand {
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.podium-1st {
+    transform: translateY(-50px);
+}
+
+.podium-2nd, .podium-3rd {
+    transform: translateY(-25px);
+}
+
+p {
+    font-size: 2rem;
+    color:#7d6956
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    margin-left: 15%;
+    border-radius: 15px; 
+    overflow: hidden;
+}
+
+th {
+    padding: 15px; 
+    background-color: #7d6956; 
+    color: #f8f4e3; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; 
+}
+
+td {
+    padding: 10px 15px;
+    font-size: 1.5rem; 
+    font-weight:bold;
+    text-align: center; 
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    height: 50px; 
+}
+
+tr:hover {
+    background-color: #1ABC9C; 
+}

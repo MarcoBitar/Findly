@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Just Me Again Down Here', cursive;
+    background-image: url('/css/images/Menu Item background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu img {
+    width: 45px;
+    height: 45px;
+}
+
+.side-menu a.menu {
+    margin-top: 10px;
+}
+
+.side-menu a.profile {
+    margin-top: 50px;
+    margin-left: 10px
+}
+
+.side-menu a.games {
+    margin-top: 40px;
+}
+
+.side-menu a.treasures {
+    margin-top: 55px;
+    margin-left: -25px;
+    width: 20px;
+    height: 20px;
+}
+
+.side-menu a.achievements {
+    margin-top: 75px;
+}
+
+.side-menu a.leaderboard {
+    margin-top: 45px;
+}
+
+header {
+    margin-left: 80px;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: 'Just Me Again Down Here', cursive;
+    margin-left: 47.5%;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 7%;
+}
+
+.profile {
+    margin-left: 45.5%;
+}
+
+.form-group {
+    margin-left: 42%;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin: 10px 0 -5px;
+}
+
+.form-group input {
+    font-family: 'Just Me Again Down Here', cursive;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    background-color: white;
+    color: #7d6956;
+    font-size: 1.2rem;
+}
+
+button {
+    font-family: 'Just Me Again Down Here', cursive;
+    background-color: #f8b400;
+    color: #121212;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+button:hover {
+    background-color: #1ABC9C;
+}
+
+.cancel-button {
+    text-decoration: none;
+    background-color: #f8b400;
+    color: #121212;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 42%;
+}
+
+.cancel-button:hover {
+    background-color: #e60000;
+}

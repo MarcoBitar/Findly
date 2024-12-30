@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Just Me Again Down Here', cursive;
+  background-image: url('/css/images/Menu Item background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu img {
+  width: 45px;
+  height: 45px;
+}
+
+.side-menu a.menu {
+  margin-top: 10px;
+}
+
+.side-menu a.profile {
+  margin-top: 50px;
+}
+
+.side-menu a.games {
+  margin-top: 40px;
+}
+
+.side-menu a.treasures {
+  margin-top: 55px;
+  margin-left: -25px;
+  width: 20px;
+  height: 20px;
+}
+
+.side-menu a.achievements {
+  margin-top: 75px;
+}
+
+.side-menu a.leaderboard {
+  margin-top: 45px;
+}
+
+header {
+  margin-left: 80px;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-family: 'Just Me Again Down Here', cursive;
+  margin-left: 47.5%;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-left: 7%;
+}
+
+
+.profile-container {
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+/* User Information Section */
+.user-info {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+a.editButton {
+  text-decoration: none;
+  padding: 0px 30px;
+  width: 20%;
+  border: none;
+  border-radius: 20px;
+  background-color: #f8b400;
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Just Me Again Down Here', cursive;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+a.editButton:hover {
+  background-color: #1ABC9C;
+  border: dotted;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.stat {
+  padding: 10px;
+  width: 45%;
+}
+
+.stat h3 {
+  margin: 0;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.stat p {
+  font-size: 1.5rem;
+  margin: 5px 0 0;
+}
+
+.treasures h4 {
+  color:#000000;
+  font-size: 2rem;
+  margin-top: 7.5px;
+}
+
+.treasures p {
+  font-size: 1.5rem;
+  margin: 5px 0 0;
+}
+
+/* Achievements Section */
+.achievements h5 {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  gap: 20px; 
+  padding: 10px;
+  width: 300%;
+}
+
+.achievement-card {
+  flex-shrink: 0;
+  width: 200px;
+  padding: 15px;
+  background-color: #f8f4e3;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.achievement-card h6 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.achievement-card p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}

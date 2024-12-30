@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Just Me Again Down Here', cursive;
+    background-image: url('/css/images/Welcome Page background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f8f4e3;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 9% auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-left: 25%;
+    margin-bottom: 60px;
+}
+
+a.ok {
+    text-decoration: none;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: bolder;
+    background-color: white;
+    border: 0.3rem solid #7B5B3A;
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    color: #7B5B3A;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 38%;
+}
+
+a.ok:hover {
+    border: 0.3rem dotted #7B5B3A;
+}
